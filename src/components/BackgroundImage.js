@@ -34,11 +34,15 @@ export default ({ filename, style, children }) => {
     <BackgroundImage
       fluid={image.node.childImageSharp.fluid}
       style={{
-        width: `100vw`,
+        height: `90vh`,
+        display: `flex`,
+        flexDirection: `column`,
+        alignItems: `center`,
+        justifyContent: `space-evenly`,
+        padding: `3rem`,
         backgroundColor: `grey`,
         backgroundSize: `cover`,
-        backgroundPosition: `center center`,
-        padding: `2rem`,
+        backgroundPosition: `center right`,
         ...style,
       }}
       children={children}

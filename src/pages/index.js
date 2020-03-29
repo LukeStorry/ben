@@ -9,63 +9,50 @@ import { Link } from "gatsby"
 const IndexPage = () => (
   <Layout>
     <SEO title={"Home"} />
-    <BackgroundImage
-      filename="surf-banner"
-      style={{
-        textAlign: `center`,
-        position: `sticky`,
-        top: 0,
-        color: "white",
-        zIndex: 1,
-      }}
-    >
-      <p>
+    <BackgroundImage filename="surf-banner">
+      {/* style={{ position: `sticky`, top: 0, zIndex: 1 }} */}
+      <p style={{ textAlign: `center`, color: "white" }}>
         Passionate surfer, student and part time sports coach at Loughborough
         University.
       </p>
-      <Link
-        class="button"
-        style={{ color: "white", padding: `0 1rem 0 1rem`, margin: `1rem` }}
-        to="#surf"
-      >
-        Surf Coach
-      </Link>
-      <Link
-        class="button"
-        style={{ color: "white", padding: `0 1rem 0 1rem`, margin: `1rem` }}
-        to="#massage"
-      >
-        Sports Massage
-      </Link>
-      <Link
-        class="button"
-        style={{ color: "white", padding: `0 1rem 0 1rem`, margin: `1rem` }}
-        to="#tutor"
-      >
-        Tutoring
-      </Link>
-      <Link
-        class="button"
-        style={{ color: "white", padding: `0 1rem 0 1rem`, margin: `1rem` }}
-        to="#football"
-      >
-        Football Referee
-      </Link>
+      <div class="row container">
+        <div class="three columns">
+          <Link to="#surf" children={"Surf Coach"} class="button column" />
+        </div>
+        <div class="three columns">
+          <Link
+            to="#massage"
+            children={"Sports Massage"}
+            class="button column"
+          />
+        </div>
+        <div class="three columns">
+          <Link to="#tutor" children={"Tutoring"} class="button column" />
+        </div>
+        <div class="three columns">
+          <Link
+            to="#football"
+            children={"Football Referee"}
+            class="button column"
+          />
+        </div>
+      </div>
     </BackgroundImage>
 
     <Section
       id="surf"
       header="Surfing Coach"
-      text="Surfing Info ............ .......... .............. ........................ ....................."
+      text="Surfing Info ............ .......... .............. ........................ .................... .............. ........................ .......................... .............. ........................ ....................."
       image="icon"
       link="page-2/"
+      style={{ backgroundColor: `#020326` }}
     />
 
     <Section
       right
       id="massage"
       header="Sports Massage"
-      text="Sports Massage Info ............ .......... .............. ........................ ....................."
+      text="Sports Massage Info ............ .......... ........................ ...................... .............. ........................ ............... ........................ ............. ........................ ....................."
       image="blank"
       style={{ backgroundColor: `grey` }}
     />
@@ -73,7 +60,7 @@ const IndexPage = () => (
     <Section
       id="tutor"
       header="Tutoring"
-      text="Tutoring Info ............ .......... .............. ........................ ....................."
+      text="Tutoring Info ............ .......... .............. .......... .............. ........................ ....................... .............. ........................ ..................................... ....................."
       image="blank"
     />
 
@@ -81,10 +68,12 @@ const IndexPage = () => (
       right
       id="football"
       header="Football Referee & Coach"
-      text="Football Referee Info ............ .......... .............. Football Coaching Info ........................ ....................."
+      text="Football Referee Info ............ .......... .................. .............. ........................ ................... Football Coaching Info ............ .............. ........................ ................................... ....................."
       image="blank"
-      style={{ backgroundColor: `lightgrey` }}
+      style={{ backgroundColor: `#133015` }}
     />
+
+    <div style={{ height: `10rem` }}></div>
   </Layout>
 )
 

@@ -6,28 +6,29 @@ export default ({ id, header, image, text, link, style, right }) => (
   <section
     id={id}
     style={{
-      zIndex: 2,
-      position: `relative`,
+      zIndex: 3,
       backgroundColor: `black`,
       color: "white",
       padding: `6rem`,
       textAlign: right ? `right` : `left`,
+      position: `sticky`,
+      top: 0,
       ...style,
     }}
   >
-    <h2>{header}</h2>
+    <h2 style={{ padding: `0 3rem 5rem 3rem` }}>{header}</h2>
 
     <div class="row">
       {!right && (
-        <div class="two columns">
+        <div class="three columns">
           <SmallImage filename={image} />
         </div>
       )}
-      <div class="ten columns">
+      <div class="nine columns" style={{ padding: `3rem` }}>
         <p>{text}</p>
       </div>
       {right && (
-        <div class="two columns">
+        <div class="three columns">
           <SmallImage filename={image} />
         </div>
       )}

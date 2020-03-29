@@ -9,15 +9,19 @@ export default ({ children, style }) => {
     <>
       <header
         style={{
-          // position: `sticky`,
-          // top: 0,
-          // zIndex: 5,
-          background: `orange`,
-          height: `6rem`,
+          position: `sticky`,
+          top: 0,
+          zIndex: 4,
+          background: `darkorange`,
           padding: `0.5rem 0 0 1rem`,
         }}
       >
-        <h2>
+        <h4
+          style={{
+            textAlign: `center`,
+            margin: 0,
+          }}
+        >
           <Link
             to="/"
             style={{
@@ -27,13 +31,13 @@ export default ({ children, style }) => {
           >
             {"Ben Storry"}
           </Link>
-        </h2>
+        </h4>
 
         {/* TODO Add other section links */}
       </header>
       <main style={style}>{children}</main>
 
-      <footer></footer>
+      {/* <footer>© LS 2020</footer> */}
     </>
   )
 }

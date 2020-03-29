@@ -13,7 +13,7 @@ export default ({ filename }) => {
             node {
               relativePath
               childImageSharp {
-                fluid(maxWidth: 100, quality: 100) {
+                fluid(maxWidth: 150, quality: 100) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }
@@ -35,9 +35,9 @@ export default ({ filename }) => {
     <Img
       fluid={image.node.childImageSharp.fluid}
       style={{
-        maxWidth: `100px`,
+        maxWidth: `150px`,
         borderRadius: `50%`,
-        margin: `0 auto 0 auto`,
+        margin: `0 auto`,
       }}
     />
   )

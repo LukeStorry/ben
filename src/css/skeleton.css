@@ -126,7 +126,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Bookman", Helvetica, sans-serif;
   color: #222; }
 
 
@@ -172,10 +172,11 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
+  margin: 1rem;
   display: inline-block;
   height: 38px;
-  padding: 0 30px;
-  color: #555;
+  padding: 0 1rem 0 1rem;
+  color: white;
   text-align: center;
   font-size: 11px;
   line-height: 38px;
