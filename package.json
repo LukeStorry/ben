@@ -4,8 +4,10 @@
   "description": "A website for ben",
   "version": "0.1.0",
   "author": "Luke Storry <luke@lukestorry.co.uk>",
+  "license": "MIT",
   "dependencies": {
     "gatsby": "^2.20.8",
+    "gatsby-background-image": "^1.0.1",
     "gatsby-image": "^2.2.44",
     "gatsby-plugin-manifest": "^2.2.48",
     "gatsby-plugin-offline": "^3.0.41",
