@@ -34,7 +34,7 @@ export default ({ filename }) => {
   return (
     <Img
       fluid={image.node.childImageSharp.fluid}
-      style={{ maxWidth: `100px`, borderRadius: `50%` }}
+      style={{ maxWidth: `100px`, borderRadius: `50%` , margin: `0 auto 0 auto`}}
     />
   )
 }

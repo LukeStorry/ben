@@ -17,13 +17,13 @@ const IndexPage = () => (
     <Section header="Surfing Coach" text="Surfing Info ............ .......... .............. ........................ ....................."
     image="icon" link="page-2/"/>
 
-    <Section header="Sports Massage" text="Sports Massage Info ............ .......... .............. ........................ ....................."
+    <Section right header="Sports Massage" text="Sports Massage Info ............ .......... .............. ........................ ....................."
     image="blank" style={{backgroundColor:`grey`}}/>
 
     <Section header="Tutoring" text="Tutoring Info ............ .......... .............. ........................ ....................."
     image="blank"/>
 
-    <Section header="Football Referee & Coach" text="Football Referee Info ............ .......... .............. Football Coaching Info ........................ ....................."
+    <Section right header="Football Referee & Coach" text="Football Referee Info ............ .......... .............. Football Coaching Info ........................ ....................."
     image="blank" style={{backgroundColor:`lightgrey`}}/>
 
   </Layout>
