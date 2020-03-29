@@ -1,10 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
+import FootballImage from "./FootballImage"
 
-const FootballCoachReferee = () => (
-  <section>
-    <h1>Football Coaching & Refereeing</h1>
-
+export default () => (
+  <section id="football">
+    <h2>Football Coaching & Refereeing</h2>
+    <FootballImage />
     <p>
       Football Info........................ ...........................
       .............................. ...........
@@ -12,5 +12,3 @@ const FootballCoachReferee = () => (
     {/* <Link to="/page-2">Info</Link> */}
   </section>
 )
-
-export default FootballCoachReferee

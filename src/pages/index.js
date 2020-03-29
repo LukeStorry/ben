@@ -2,30 +2,28 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
-import SurfInstructor from "../components/homeSections/surfInstructor"
-import SportsMassage from "../components/homeSections/sportsMassage"
-import Tutoring from "../components/homeSections/tutoring"
-import FootballCoachReferee from "../components/homeSections/footballCoachReferee"
+import SurfSection from "../components/home/SurfSection"
+import MassageSection from "../components/home/MassageSection"
+import TutoringSection from "../components/home/TutoringSection"
+import FootballSection from "../components/home/FootballSection"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title={"Home"} />
-    <h1>Hi</h1>
-    <p>Welcome to your new site.</p>
-    <p>Great stuff to come.</p>
+  <div style={{ background: "black", color: "white" }}>
+    <Layout>
+      <SEO title={"Home"} />
+      <h1>Hi</h1>
+      <p>Welcome to your new site.</p>
+      <p>Great stuff to come.</p>
 
-    <SurfInstructor />
-    <SportsMassage />
-    <Tutoring />
-    <FootballCoachReferee />
+      <SurfSection />
+      <MassageSection />
+      <TutoringSection />
+      <FootballSection />
 
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+      <Link to="/page-2/">Go to page 2</Link>
+    </Layout>
+  </div>
 )
 
 export default IndexPage

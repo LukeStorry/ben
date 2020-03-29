@@ -14,25 +14,21 @@ const Layout = ({ children }) => {
           marginBottom: `1.45rem`,
         }}
       >
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `1.45rem 1.0875rem`,
-          }}
-        >
-          <h1 style={{ margin: 0 }}>
+          <h2>
             <Link
               to="/"
               style={{
                 color: `white`,
                 textDecoration: `none`,
+                padding: `1rem`,
               }}
             >
               {"Ben Storry"}
             </Link>
-          </h1>
-        </div>
+          </h2>
+
+{/* TODO Add other section links */}
+
       </header>
       <div
         style={{

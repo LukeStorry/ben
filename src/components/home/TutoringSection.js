@@ -1,9 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
+import TutoringImage from "./TutoringImage"
 
-const Tutoring = () => (
-  <section>
-    <h1>Tutoring</h1>
+export default () => (
+  <section id="tutoring">
+    <h2>Tutoring</h2>
+    <TutoringImage />
 
     <p>
       Tutoring Info........................ ...........................
@@ -12,5 +13,3 @@ const Tutoring = () => (
     {/* <Link to="/page-2">Info</Link> */}
   </section>
 )
-
-export default Tutoring

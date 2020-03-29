@@ -1,10 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
+import MassageImage from "./MassageImage"
 
-const SportsMassage = () => (
-  <section>
-    <h1>Sports Massage</h1>
-
+export default () => (
+  <section id="massage">
+    <h2>Sports Massage</h2>
+    <MassageImage />
     <p>
       SportsMassage Info........................ ...........................
       .............................. ...........
@@ -12,5 +12,3 @@ const SportsMassage = () => (
     {/* <Link to="/page-2">Info</Link> */}
   </section>
 )
-
-export default SportsMassage

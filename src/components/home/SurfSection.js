@@ -1,9 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
+import SurfImage from "./SurfImage"
 
-const SurfInstructor = () => (
-  <section>
-    <h1>Surf Instructor</h1>
+export default () => (
+  <section id="surf">
+    <h2>Surf Instructor</h2>
+    <SurfImage />
 
     <p>
       Surf Instructor Info........................ ...........................
@@ -12,5 +13,3 @@ const SurfInstructor = () => (
     {/* <Link to="/page-2">Info</Link> */}
   </section>
 )
-
-export default SurfInstructor
