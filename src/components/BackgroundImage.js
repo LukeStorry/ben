@@ -39,7 +39,7 @@ export default ({ filename, style, children }) => {
         backgroundSize: `cover`,
         backgroundPosition: `center center`,
         padding: `2rem`,
-        ...style
+        ...style,
       }}
       children={children}
     />

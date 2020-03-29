@@ -9,8 +9,12 @@ export default ({ children, style }) => {
     <>
       <header
         style={{
+          // position: `sticky`,
+          // top: 0,
+          // zIndex: 5,
           background: `orange`,
           height: `6rem`,
+          padding: `0.5rem 0 0 1rem`,
         }}
       >
         <h2>
@@ -19,7 +23,6 @@ export default ({ children, style }) => {
             style={{
               color: `white`,
               textDecoration: `none`,
-              padding: `1rem`,
             }}
           >
             {"Ben Storry"}
