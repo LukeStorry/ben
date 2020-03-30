@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import "../css/normalize.css"
 import "../css/skeleton.css"
+import "../css/custom.css"
 
 export default ({ children, style }) => {
   return (
