@@ -29,7 +29,7 @@ const Contact = props => (
       <div className="container">
         <label htmlFor="message">Message</label>
         <textarea
-          style={{ height: `15rem` }}
+          style={{ height: `15rem`, color: `black` }}
           name="message"
           id="message"
           required
