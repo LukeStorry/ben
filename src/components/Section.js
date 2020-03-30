@@ -1,7 +1,17 @@
 import React from "react"
 import SmallImage from "./SmallImage"
 
-export default ({ id, color, header, imageFile, text, right, children }) => {
+export default ({
+  id,
+  color,
+  header,
+  imageFile,
+  text,
+  right,
+  children,
+  shrinkable,
+  style,
+}) => {
   const image = (
     <div className="three columns">
       <SmallImage filename={imageFile} />
@@ -28,8 +38,15 @@ export default ({ id, color, header, imageFile, text, right, children }) => {
   )
 
   return (
-    <div style={{ margin: `0`, height: `100vh` }}>
-      <section id={id} style={{ backgroundColor: color }}>
+    <div style={{ margin: `0`, height: shrinkable ? `auto` : `100vh` }}>
+      <section
+        id={id}
+        style={{
+          backgroundColor: color,
+          minHeight: shrinkable ? 0 : `50vh`,
+          ...style,
+        }}
+      >
         {children || defaultChildren}
       </section>
     </div>
