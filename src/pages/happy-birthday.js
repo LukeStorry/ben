@@ -2,6 +2,9 @@ import React from "react"
 import SEO from "../components/SEO"
 import { Link } from "gatsby"
 
+import "../css/normalize.css"
+import "../css/skeleton.css"
+
 const HappyBirthday = () => (
   <div
     style={{
