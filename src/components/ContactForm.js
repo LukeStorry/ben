@@ -2,7 +2,7 @@ import React from "react"
 import Section from "../components/Section"
 
 const Contact = props => (
-  <Section id="contact" style={{ padding: `3rem 0` }}>
+  <Section id="contact" style={{ padding: `3rem 0`, color: `black` }}>
     <h2>Contact</h2>
 
     <form
@@ -29,7 +29,7 @@ const Contact = props => (
       <div className="container">
         <label htmlFor="message">Message</label>
         <textarea
-          style={{ height: `15rem`, color: `black` }}
+          style={{ height: `15rem` }}
           name="message"
           id="message"
           required
