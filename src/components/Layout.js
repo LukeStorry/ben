@@ -12,8 +12,8 @@ export default ({ children, style }) => {
         style={{
           position: `sticky`,
           top: 0,
-          zIndex: 4,
-          background: `#56144D`,
+          zIndex: 99,
+          background: `#B19CD9`,
           padding: `1rem`,
         }}
       >
@@ -26,7 +26,7 @@ export default ({ children, style }) => {
           <Link
             to="/"
             style={{
-              color: `white`,
+              color: `#444`,
               textDecoration: `none`,
             }}
           >
@@ -34,7 +34,7 @@ export default ({ children, style }) => {
           </Link>
         </h3>
 
-        {/* TODO Add other section links */}
+        {/* TODO Add other section links? */}
       </header>
       <main style={style}>{children}</main>
 
