@@ -546,7 +546,3 @@ there.
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
 }
-
-html {
-  scroll-behavior: smooth;
-}

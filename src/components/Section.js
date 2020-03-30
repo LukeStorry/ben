@@ -1,47 +1,37 @@
 import React from "react"
 import SmallImage from "./SmallImage"
-import { Link } from "gatsby"
 
-export default ({ id, header, image, text, link, style, right }) => (
-  <section
-    id={id}
-    style={{
-      zIndex: 3,
-      backgroundColor: `black`,
-      color: "white",
-      textAlign: right ? `right` : `left`,
-      margin: `20rem 0`,
-      position: `sticky`,
-      top: `3rem`,
-      minHeight: `60vh`,
-      display: `flex`,
-      flexDirection: `column`,
-      alignItems: `center`,
-      justifyContent: `space-evenly`,
-      ...style,
-    }}
-  >
-    <h2 style={{ padding: `7rem 3rem 0rem 3rem` }}>{header}</h2>
-
-    <div
-      className="row container"
-      style={{ padding: `2rem`, marginTop: `4rem` }}
-    >
-      {!right && (
-        <div className="three columns">
-          <SmallImage filename={image} />
-        </div>
-      )}
-      <div className="nine columns" style={{ padding: `2rem` }}>
-        <p>{text}</p>
-      </div>
-      {right && (
-        <div className="three columns">
-          <SmallImage filename={image} />
-        </div>
-      )}
+export default ({ id, color, header, imageFile, text, right, children }) => {
+  const image = (
+    <div className="three columns">
+      <SmallImage filename={imageFile} />
     </div>
+  )
 
-    {link && false && <Link to={link}>Info</Link>}
-  </section>
-)
+  const defaultChildren = (
+    <>
+      <h2 style={{ padding: `3rem 3rem 0rem 3rem` }}>{header}</h2>
+
+      <div
+        className="row container"
+        style={{ padding: `2rem`, marginTop: `4rem` }}
+      >
+        {!right && image}
+
+        <div className="nine columns" style={{ padding: `2rem` }}>
+          <p>{text}</p>
+        </div>
+
+        {right && image}
+      </div>
+    </>
+  )
+
+  return (
+    <div style={{ margin: `0`, height: `100vh` }}>
+      <section id={id} style={{ backgroundColor: color }}>
+        {children || defaultChildren}
+      </section>
+    </div>
+  )
+}

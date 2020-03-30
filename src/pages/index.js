@@ -48,19 +48,18 @@ const IndexPage = () => (
       </div>
     </div>
 
-    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-    <div
-      style={{ backgroundColor: `black` }}
-      className="elfsight-app-5ba5ff06-d600-402e-ada0-d8bfe77b47ba"
-    ></div>
+    <Section id="instagram" color="white">
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+      <div className="elfsight-app-5ba5ff06-d600-402e-ada0-d8bfe77b47ba"></div>
+    </Section>
 
     <Section
       id="surf"
       header="Surfing Coach"
       text="I'm a qualified surf coach, having taught across Europe."
-      image="icon"
+      imageFile="icon"
       link="page-2/"
-      style={{ backgroundColor: `#020326` }}
+      color="#020326"
     />
 
     <Section
@@ -68,15 +67,15 @@ const IndexPage = () => (
       id="massage"
       header="Sports Massage"
       text="<Insert info>"
-      image="blank"
-      style={{ backgroundColor: `grey` }}
+      imageFile="blank"
+      color="grey"
     />
 
     <Section
       id="tutor"
       header="Tutoring"
       text="With over four years' experience tutoring online..."
-      image="blank"
+      imageFile="blank"
     />
 
     <Section
@@ -84,11 +83,11 @@ const IndexPage = () => (
       id="football"
       header="Football Referee & Coach"
       text="I am good at blowing whistles."
-      image="blank"
-      style={{ backgroundColor: `#133015` }}
+      imageFile="blank"
+      color="#133015"
     />
 
-    <div style={{ height: `50vh` }} />
+    <div style={{ height: `100vh` }} />
   </Layout>
 )
 
