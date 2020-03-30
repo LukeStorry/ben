@@ -12,6 +12,7 @@ const HappyBirthday = () => (
       flexDirection: `column`,
       alignItems: `center`,
       justifyContent: `space-evenly`,
+      margin: 0,
     }}
   >
     <SEO title="Happy Birthday" />

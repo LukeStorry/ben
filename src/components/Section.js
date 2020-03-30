@@ -31,7 +31,7 @@ export default ({ id, header, image, text, link, style, right }) => (
           <SmallImage filename={image} />
         </div>
       )}
-      <div className="nine columns"  style={{ padding: `2rem`}}>
+      <div className="nine columns" style={{ padding: `2rem` }}>
         <p>{text}</p>
       </div>
       {right && (

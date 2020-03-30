@@ -75,7 +75,6 @@ const IndexPage = () => (
       image="blank"
       style={{ backgroundColor: `#133015` }}
     />
-
   </Layout>
 )
 
