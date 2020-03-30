@@ -39,7 +39,6 @@ export default ({ filename, style, children }) => {
         flexDirection: `column`,
         alignItems: `center`,
         justifyContent: `space-evenly`,
-        padding: `3rem`,
         backgroundColor: `grey`,
         backgroundSize: `cover`,
         backgroundPosition: `center right`,

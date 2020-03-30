@@ -13,10 +13,10 @@ export default ({ children, style }) => {
           top: 0,
           zIndex: 4,
           background: `darkorange`,
-          padding: `0.5rem 0 0 1rem`,
+          padding: `1rem`,
         }}
       >
-        <h4
+        <h3
           style={{
             textAlign: `center`,
             margin: 0,
@@ -31,7 +31,7 @@ export default ({ children, style }) => {
           >
             {"Ben Storry"}
           </Link>
-        </h4>
+        </h3>
 
         {/* TODO Add other section links */}
       </header>

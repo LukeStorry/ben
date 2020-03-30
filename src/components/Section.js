@@ -9,7 +9,7 @@ export default ({ id, header, image, text, link, style, right }) => (
       zIndex: 3,
       backgroundColor: `black`,
       color: "white",
-      padding: `6rem`,
+      padding: `7rem`,
       textAlign: right ? `right` : `left`,
       position: `sticky`,
       top: 0,

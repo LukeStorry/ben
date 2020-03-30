@@ -11,10 +11,10 @@ const IndexPage = () => (
     <SEO title={"Home"} />
     <BackgroundImage filename="surf-banner">
       {/* style={{ position: `sticky`, top: 0, zIndex: 1 }} */}
-      <p style={{ textAlign: `center`, color: "white" }}>
+      <h5 style={{ textAlign: `center`, color: "white", padding: `3rem` }}>
         Passionate surfer, student and part time sports coach at Loughborough
         University.
-      </p>
+      </h5>
       <div class="row container">
         <div class="three columns">
           <Link to="#surf" children={"Surf Coach"} class="button column" />
@@ -73,7 +73,7 @@ const IndexPage = () => (
       style={{ backgroundColor: `#133015` }}
     />
 
-    <div style={{ height: `10rem` }}></div>
+    <div style={{ height: `30rem`, backgroundColor: `black` }}></div>
   </Layout>
 )
 
