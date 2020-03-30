@@ -9,26 +9,33 @@ export default ({ id, header, image, text, link, style, right }) => (
       zIndex: 3,
       backgroundColor: `black`,
       color: "white",
-      padding: `7rem`,
       textAlign: right ? `right` : `left`,
       position: `sticky`,
-      top: 0,
+      top: `3rem`,
+      minHeight: "60vh",
+      display: `flex`,
+      flexDirection: `column`,
+      alignItems: `center`,
+      justifyContent: `space-evenly`,
       ...style,
     }}
   >
-    <h2 style={{ padding: `0 3rem 5rem 3rem` }}>{header}</h2>
+    <h2 style={{ padding: `7rem 3rem 0rem 3rem` }}>{header}</h2>
 
-    <div class="row">
+    <div
+      className="row container"
+      style={{ padding: `2rem`, marginTop: `4rem` }}
+    >
       {!right && (
-        <div class="three columns">
+        <div className="three columns">
           <SmallImage filename={image} />
         </div>
       )}
-      <div class="nine columns" style={{ padding: `3rem` }}>
+      <div className="nine columns"  style={{ padding: `2rem`}}>
         <p>{text}</p>
       </div>
       {right && (
-        <div class="three columns">
+        <div className="three columns">
           <SmallImage filename={image} />
         </div>
       )}

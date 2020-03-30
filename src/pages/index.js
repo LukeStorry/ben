@@ -15,32 +15,32 @@ const IndexPage = () => (
         Passionate surfer, student and part time sports coach at Loughborough
         University.
       </h5>
-      <div class="row container">
-        <div class="three columns">
-          <Link to="#surf" children={"Surf Coach"} class="button column" />
+      <div className="row container">
+        <div className="three columns">
+          <Link to="/#surf" children={"Surf Coach"} className="button column" />
         </div>
-        <div class="three columns">
+        <div className="three columns">
           <Link
-            to="#massage"
+            to="/#massage"
             children={"Sports Massage"}
-            class="button column"
+            className="button column"
           />
         </div>
-        <div class="three columns">
-          <Link to="#tutor" children={"Tutoring"} class="button column" />
+        <div className="three columns">
+          <Link to="/#tutor" children={"Tutoring"} className="button column" />
         </div>
-        <div class="three columns">
+        <div className="three columns">
           <Link
-            to="#football"
+            to="/#football"
             children={"Football Referee"}
-            class="button column"
+            className="button column"
           />
         </div>
       </div>
     </BackgroundImage>
 
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-    <div class="elfsight-app-5ba5ff06-d600-402e-ada0-d8bfe77b47ba"></div>
+    <div className="elfsight-app-5ba5ff06-d600-402e-ada0-d8bfe77b47ba"></div>
 
     <Section
       id="surf"
@@ -76,7 +76,6 @@ const IndexPage = () => (
       style={{ backgroundColor: `#133015` }}
     />
 
-    <div style={{ height: `30rem`, backgroundColor: `black` }}></div>
   </Layout>
 )
 
