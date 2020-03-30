@@ -49,7 +49,10 @@ const IndexPage = () => (
     </div>
 
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-    <div className="elfsight-app-5ba5ff06-d600-402e-ada0-d8bfe77b47ba"></div>
+    <div
+      style={{ backgroundColor: `black` }}
+      className="elfsight-app-5ba5ff06-d600-402e-ada0-d8bfe77b47ba"
+    ></div>
 
     <Section
       id="surf"
