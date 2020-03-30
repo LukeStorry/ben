@@ -2,7 +2,7 @@ import React from "react"
 import Section from "../components/Section"
 
 const Contact = props => (
-  <Section id="contact" style={{ padding: `3rem 0`, color: `black` }}>
+  <Section id="contact" style={{ padding: `3rem 0` }}>
     <h2>Contact</h2>
 
     <form
@@ -17,19 +17,31 @@ const Contact = props => (
       <div className="row container">
         <div className="five columns">
           <label htmlFor="name">Name</label>
-          <input type="text" name="name" id="name" required />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            style={{ backgroundColor: `grey` }}
+          />
         </div>
 
         <div className="six columns offset-by-one">
           <label htmlFor="email">Email</label>
-          <input type="text" name="email" id="email" required />
+          <input
+            type="text"
+            name="email"
+            id="email"
+            required
+            style={{ backgroundColor: `grey` }}
+          />
         </div>
       </div>
 
       <div className="container">
         <label htmlFor="message">Message</label>
         <textarea
-          style={{ height: `15rem` }}
+          style={{ height: `15rem`, backgroundColor: `grey` }}
           name="message"
           id="message"
           required
