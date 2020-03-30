@@ -29,7 +29,7 @@ const HappyBirthday = () => (
       children={"Go see your present"}
       className="button"
       style={{
-        backgroundColor: "darkorange",
+        backgroundColor: "#56144D",
       }}
     />
   </div>

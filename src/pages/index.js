@@ -9,8 +9,17 @@ import { Link } from "gatsby"
 const IndexPage = () => (
   <Layout>
     <SEO title={"Home"} />
-    <BackgroundImage filename="surf-banner">
-      {/* style={{ position: `sticky`, top: 0, zIndex: 1 }} */}
+    <BackgroundImage filename="surf-banner" />
+    <div
+      style={{
+        position: `relative`,
+        height: `100vh`,
+        display: `flex`,
+        flexDirection: `column`,
+        alignItems: `center`,
+        justifyContent: `space-evenly`,
+      }}
+    >
       <h5 style={{ textAlign: `center`, color: "white", padding: `3rem` }}>
         Passionate surfer, student and part time sports coach at Loughborough
         University.
@@ -37,7 +46,7 @@ const IndexPage = () => (
           />
         </div>
       </div>
-    </BackgroundImage>
+    </div>
 
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <div className="elfsight-app-5ba5ff06-d600-402e-ada0-d8bfe77b47ba"></div>
@@ -45,7 +54,7 @@ const IndexPage = () => (
     <Section
       id="surf"
       header="Surfing Coach"
-      text="Surfing Info ............ .......... .............. ........................ .................... .............. ........................ .......................... .............. ........................ ....................."
+      text="I'm a qualified surf coach, having taught across Europe."
       image="icon"
       link="page-2/"
       style={{ backgroundColor: `#020326` }}
@@ -55,7 +64,7 @@ const IndexPage = () => (
       right
       id="massage"
       header="Sports Massage"
-      text="Sports Massage Info ............ .......... ........................ ...................... .............. ........................ ............... ........................ ............. ........................ ....................."
+      text="<Insert info>"
       image="blank"
       style={{ backgroundColor: `grey` }}
     />
@@ -63,7 +72,7 @@ const IndexPage = () => (
     <Section
       id="tutor"
       header="Tutoring"
-      text="Tutoring Info ............ .......... .............. .......... .............. ........................ ....................... .............. ........................ ..................................... ....................."
+      text="With over four years' experience tutoring online..."
       image="blank"
     />
 
@@ -71,10 +80,12 @@ const IndexPage = () => (
       right
       id="football"
       header="Football Referee & Coach"
-      text="Football Referee Info ............ .......... .................. .............. ........................ ................... Football Coaching Info ............ .............. ........................ ................................... ....................."
+      text="I am good at blowing whistles."
       image="blank"
       style={{ backgroundColor: `#133015` }}
     />
+
+    <div style={{ height: `50vh` }} />
   </Layout>
 )
 

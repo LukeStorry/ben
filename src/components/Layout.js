@@ -12,7 +12,7 @@ export default ({ children, style }) => {
           position: `sticky`,
           top: 0,
           zIndex: 4,
-          background: `darkorange`,
+          background: `#56144D`,
           padding: `1rem`,
         }}
       >
