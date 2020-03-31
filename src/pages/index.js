@@ -6,11 +6,13 @@ import IntroSection from "../components/IntroSection"
 import Section from "../components/Section"
 import ContactForm from "../components/ContactForm"
 import { Link } from "gatsby"
+import BackgroundImage from "../components/BackgroundImage"
 
 const IndexPage = () => (
   <Layout>
     <SEO title={"Home"} />
 
+    <BackgroundImage filename="surf-banner" />
     <IntroSection />
 
     <Section shrinkable id="instagram" color="white">
@@ -54,17 +56,15 @@ const IndexPage = () => (
 
     <ContactForm />
 
-    <div style={{ textAlign: `center` }}>
-      <Link
-        to="/#intro"
-        className="button"
-        style={{
-          backgroundColor: `white`,
-          color: `black`,
-          margin: `10rem auto`,
-          opacity: 1,
-        }}
-      >
+    <div
+      style={{
+        textAlign: `center`,
+        zIndex: 5,
+        position: `relative`,
+        padding: `10rem`,
+      }}
+    >
+      <Link to="/#intro" className="button">
         Back to top
       </Link>
     </div>
