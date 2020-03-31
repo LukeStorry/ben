@@ -1,3 +1,15 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+
+
+
+
+
 section {
   position: sticky;
   top: 20vh;
