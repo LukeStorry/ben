@@ -4,48 +4,37 @@ import SmallImage from "./SmallImage"
 export default ({
   id,
   color,
+  shrinkable,
   header,
   imageFile,
   text,
   right,
   children,
-  shrinkable,
-  style,
 }) => {
-  const image = (
-    <div className="three columns">
-      <SmallImage filename={imageFile} />
-    </div>
-  )
-
   const defaultChildren = (
     <>
-      <h2 style={{ padding: `3rem 3rem 0rem 3rem` }}>{header}</h2>
+      <h2 className="font-bold text-lg">{header}</h2>
 
-      <div
-        className="row container"
-        style={{ padding: `2rem`, marginTop: `4rem` }}
-      >
-        {!right && image}
+      <div>
+        {!right && <SmallImage filename={imageFile} />}
 
         <div className="nine columns" style={{ padding: `2rem` }}>
           <p>{text}</p>
         </div>
 
-        {right && image}
+        {right && <SmallImage filename={imageFile} />}
       </div>
     </>
   )
 
   return (
-    <div style={{ margin: `0`, height: shrinkable ? `auto` : `100vh` }}>
+    <div id={`${id}-scroll-wrapper`} className={shrinkable ? "h-auto" : "h-screen"}>
       <section
         id={id}
-        style={{
-          backgroundColor: color,
-          minHeight: shrinkable ? 0 : `50vh`,
-          ...style,
-        }}
+        className={
+          `sticky flex flex-col justify-around items-center opacity-75 top-20 bg-${color} ` +
+          (shrinkable ? "min-h-0" : "min-h-50")
+        }
       >
         {children || defaultChildren}
       </section>

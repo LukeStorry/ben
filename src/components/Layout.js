@@ -3,40 +3,15 @@ import { Link } from "gatsby"
 
 import "../css/style.css"
 
-export default ({ children, style }) => {
+export default ({ children }) => {
   return (
     <>
-      <header
-        style={{
-          position: `sticky`,
-          top: 0,
-          zIndex: 99,
-          background: `#B19CD9`,
-          padding: `1rem`,
-        }}
-      >
-        <h3
-          style={{
-            textAlign: `center`,
-            margin: 0,
-          }}
-        >
-          <Link
-            to="/"
-            style={{
-              color: `#444`,
-              textDecoration: `none`,
-            }}
-          >
-            {"Ben Storry"}
-          </Link>
+      <header className="sticky top-0 z-50 bg-purple-400 p-2">
+        <h3 className="text-xl font-bold text-center text-white">
+          <Link to="/">Ben Storry</Link>
         </h3>
-
-        {/* TODO Add other section links? */}
       </header>
-      <main style={style}>{children}</main>
-
-      {/* <footer>© LS 2020</footer> */}
+      <main>{children}</main>
     </>
   )
 }
