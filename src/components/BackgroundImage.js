@@ -1,8 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
+import Img from "gatsby-image"
 
-export default ({ filename, style, children }) => {
+export default ({ filename }) => {
   const data = useStaticQuery(
     graphql`
       query {
@@ -31,20 +31,12 @@ export default ({ filename, style, children }) => {
     return null
   }
   return (
-    <BackgroundImage
+    <Img
+      alt="background image"
       fluid={image.node.childImageSharp.fluid}
-      style={{
-        position: `fixed`,
-        top: 0,
-        bottom: 0,
-        minWidth: `100vw`,
-        height: `100vh`,
-        backgroundColor: `grey`,
-        backgroundSize: `cover`,
-        backgroundPosition: `center right`,
-        ...style,
-      }}
-      children={children}
+      className="top-0 min-w-screen h-screen -mt-full"
+      imgStyle={{ objectPosition: `center right`, position: `fixed` }}
+      backgroundColor
     />
   )
 }
