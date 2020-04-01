@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Ben Storry`,
     description: `Sports Science at Loughborough University. Surf instructor, football coach/referee, sports masseuse & tutor.`,
-    author: `@lukesotrry`,
+    author: `@lukestorry`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
