@@ -9,11 +9,12 @@ export default ({
   imageFile,
   text,
   right,
+  fullHeight,
   children,
 }) => {
   const defaultChildren = (
     <>
-      <h2 className="font-bold text-lg">{header}</h2>
+      <h2 className="font-bold text-lg px-2 py-10">{header}</h2>
 
       <div>
         {!right && <SmallImage filename={imageFile} />}
@@ -32,8 +33,9 @@ export default ({
       <section
         id={id}
         className={
-          `sticky flex flex-col justify-around items-center opacity-75 top-20 bg-${color} ` +
-          (shrinkable ? "min-h-0" : "min-h-50")
+          `sticky flex flex-col justify-evenly items-center opacity-75 top-20 text-white bg-${color}`
+          + (shrinkable ? " min-h-0" : " min-h-50")
+          + (fullHeight ? " h-full" : "  h-auto")
         }
       >
         {children || defaultChildren}

@@ -34,7 +34,7 @@ export default ({ filename }) => {
   return (
     <Img
       fluid={image.node.childImageSharp.fluid}
-      className="rounded-full mx-auto my-8 mx-4 max-w-xs max-w-150"
+      className="rounded-full mx-auto my-8 mx-4 max-w-150"
     />
   )
 }
