@@ -28,7 +28,7 @@ const IndexPage = () => (
       right
       id="massage"
       header="Sports Massage"
-      text="<Insert info>"
+      text="Massage qualifications    ..................... .................... <Insert info>"
       imageFile="blank"
       color="gray-600"
     />
@@ -37,7 +37,7 @@ const IndexPage = () => (
       header="Tutoring"
       text="With over four years' experience tutoring online..."
       imageFile="blank"
-      color="gray-400"
+      color="gray-500"
     />
     <Section
       right
