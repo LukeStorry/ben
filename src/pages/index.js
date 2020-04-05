@@ -5,7 +5,6 @@ import SEO from "../components/SEO"
 import IntroSection from "../components/IntroSection"
 import Section from "../components/Section"
 import ContactForm from "../components/ContactForm"
-import { Link } from "gatsby"
 import BackgroundImage from "../components/BackgroundImage"
 
 const IndexPage = () => (
