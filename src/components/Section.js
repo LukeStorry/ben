@@ -31,12 +31,12 @@ export default ({
   return (
     <div
       id={`${id}-scroll-wrapper`}
-      className={shrinkable ? "h-auto" : "h-screen"}
+      className={shrinkable ? "h-auto py-12" : "h-screen"}
     >
       <section
         id={id}
         className={
-          `sticky flex flex-col justify-evenly items-center opacity-75 top-20 text-white bg-${color}` +
+          `sticky flex flex-col justify-evenly items-center opacity-75 top-20 bg-${color} text-white` +
           (shrinkable ? " min-h-0" : " min-h-60vh") +
           (fullHeight ? " h-full" : "  h-auto")
         }

@@ -14,7 +14,7 @@ const IndexPage = () => (
     <IntroSection />
     <Section shrinkable id="instagram" color="white">
       <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-      <div className="elfsight-app-5ba5ff06-d600-402e-ada0-d8bfe77b47ba"></div>
+      <div className="elfsight-app-5ba5ff06-d600-402e-ada0-d8bfe77b47ba text-black"></div>
     </Section>
     <Section
       id="surf"
