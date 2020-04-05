@@ -17,7 +17,7 @@ html {
 }
 
 .max-w-150 {
-  max-width: 150;
+  max-width: 150px;
 }
 
 .-mt-full {
@@ -25,8 +25,9 @@ html {
 }
 
 .button {
-  @apply bg-purple-500 text-white font-bold py-2 px-4 rounded;
+  @apply border border-purple-500 text-white font-bold py-2 px-4 rounded;
 }
+
 .button:hover {
-  @apply bg-purple-700;
+  @apply bg-purple-500 border-purple-700;
 }
