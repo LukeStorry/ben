@@ -26,9 +26,29 @@ html {
 }
 
 .button {
-  @apply border border-purple-500 text-white font-bold py-2 px-4 rounded;
+  @apply border border-purple-500 text-white font-bold py-2 rounded;
 }
 
 .button:hover {
   @apply bg-purple-500 border-purple-700;
+}
+
+.button:active {
+  @apply bg-black text-purple-500;
+}
+
+.button-inverse {
+  @apply bg-purple-500;
+}
+
+.button-inverse:hover {
+  @apply bg-purple-700;
+}
+
+.input-box {
+  @apply shadow appearance-none border rounded w-full py-2 px-3 bg-gray-700 text-white leading-tight;
+}
+
+.input-box:focus {
+  @apply outline-none border-gray-500 shadow-outline bg-gray-800;
 }

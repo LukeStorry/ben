@@ -2,49 +2,63 @@ import React from "react"
 import Section from "../components/Section"
 
 const Contact = props => (
-  <Section id="contact" color="black">
-    <h2>Contact</h2>
-
+  <Section id="contact" color="black" header="Contact">
     <form
       name="contact"
       method="post"
       action="#"
       data-netlify="true"
-      className=""
+      className="px-4 mb-12 mt-0 w-full sm:w-auto"
     >
       <input type="hidden" name="form-name" value="contact" />
 
-      <div className="container mx-auto">
-        <div className="">
-          <label htmlFor="name">Name</label>
+      <div className="grid sm:grid-cols-2 gap-4 mx-auto mb-4">
+        <div>
+          <label htmlFor="name" className="block text-sm font-bold mb-2">
+            Name
+          </label>
           <input
+            className="input-box"
             type="text"
             name="name"
             id="name"
             required
-            style={{ backgroundColor: `grey` }}
           />
         </div>
 
-        <div className="container">
-          <label htmlFor="email">Email</label>
-          <input type="text" name="email" id="email" required />
+        <div>
+          <label htmlFor="email" className="block text-sm font-bold mb-2">
+            Email
+          </label>
+          <input
+            className="input-box"
+            type="text"
+            name="email"
+            id="email"
+            required
+          />
         </div>
-      </div>
 
-      <div className="container mx-auto">
-        <label htmlFor="message">Message</label>
+      </div>
+      <div>
+        <label htmlFor="message" className="block text-sm font-bold mb-2">
+          Message
+        </label>
         <textarea
+          className="input-box h-32 min-w-full"
           name="message"
           id="message"
           required
           placeholder="Hi Ben …"
-          className="h-20"
         ></textarea>
       </div>
 
-      <div className="container mx-auto">
-        <input type="submit" value="Send" className="button" />
+      <div className="w-full text-center my-8">
+        <input
+          type="submit"
+          value="Send"
+          className="button button-inverse mx-auto px-4"
+        />
       </div>
     </form>
   </Section>
