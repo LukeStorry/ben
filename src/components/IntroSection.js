@@ -9,17 +9,17 @@ export default () => (
       University.
     </h5>
 
-    <div className="grid lg:grid-cols-4 gap-4 text-center">
-      <Link to="/#surf" className="button">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center px-6 w-full sm:w-auto">
+      <Link to="/#surf" className="button px-8">
         Surf Coach
       </Link>
-      <Link to="/#massage" className="button">
+      <Link to="/#massage" className="button px-8">
         Sports Massage
       </Link>
-      <Link to="/#tutor" className="button">
+      <Link to="/#tutor" className="button px-8">
         Tutoring
       </Link>
-      <Link to="/#football" className="button">
+      <Link to="/#football" className="button px-8">
         Football Referee
       </Link>
     </div>
