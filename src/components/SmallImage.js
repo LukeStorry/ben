@@ -32,9 +32,11 @@ export default ({ filename }) => {
   }
 
   return (
-    <Img
-      fluid={image.node.childImageSharp.fluid}
-      className="rounded-full mx-auto my-8 mx-4 max-w-150"
-    />
+    <div>
+      <Img
+        fluid={image.node.childImageSharp.fluid}
+        className="rounded-full mx-8 my-4 x-200 p-10"
+      />
+    </div>
   )
 }

@@ -12,12 +12,13 @@ html {
 .top-20 {
   top: 20vh;
 }
-.min-h-50 {
-  min-height: 50vh;
+.min-h-60vh {
+  min-height: 60vh;
 }
 
-.max-w-150 {
-  max-width: 150px;
+.x-200 {
+  width: 200px;
+  height: 200px;
 }
 
 .-mt-full {
