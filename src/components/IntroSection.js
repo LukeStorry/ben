@@ -10,16 +10,16 @@ export default () => (
     </h5>
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center px-6 w-full sm:w-auto">
-      <Link to="/#surf" className="button px-8">
+      <Link to="/#surf" className="button">
         Surf Coach
       </Link>
-      <Link to="/#massage" className="button px-8">
+      <Link to="/#massage" className="button">
         Sports Massage
       </Link>
-      <Link to="/#tutor" className="button px-8">
+      <Link to="/#tutor" className="button">
         Tutoring
       </Link>
-      <Link to="/#football" className="button px-8">
+      <Link to="/#football" className="button">
         Football Referee
       </Link>
     </div>

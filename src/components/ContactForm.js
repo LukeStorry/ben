@@ -38,7 +38,6 @@ const Contact = props => (
             required
           />
         </div>
-
       </div>
       <div>
         <label htmlFor="message" className="block text-sm font-bold mb-2">
@@ -57,7 +56,7 @@ const Contact = props => (
         <input
           type="submit"
           value="Send"
-          className="button button-inverse mx-auto px-4"
+          className="button button-inverse mx-auto"
         />
       </div>
     </form>
