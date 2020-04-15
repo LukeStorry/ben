@@ -18,11 +18,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Ben Storry`,
+        short_name: `ben-storry`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#424242`,
+        theme_color: `#b794f4`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`,
       },
